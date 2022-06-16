@@ -20,7 +20,7 @@
 <body>
 
   <header>
-    <div class="container container-nav">
+    <div class="container container-flex">
       <div class="site-title">
         <h1>Living the simple life</h1>
         <p class="subtitle">A blog exploring minimalism in life</p>
@@ -31,59 +31,58 @@
             <a href="#" class="current-page">HOME</a>
           </li>
           <li>
-            <a href="#">ABOUT ME</a>
+            <a href="about-me.html">ABOUT ME</a>
           </li>
           <li>
-            <a href="#">RECENT POSTS</a>
+            <a href="recent-posts.html">RECENT POSTS</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section>
+  <div class="container container-flex">
 
-    <div class="main">
+    <main>
+      <!-- this div can be assigned the class "container", as it uses the same properties -->
 
-      <div class="featured-content">
+      <div class="article-featured">
 
-        <img class="featured-img" src="img/featured-content-img.jpg" alt="featured-img">
-        <div class="featured-text">
-          <h2>Finding simplicity in life</h2>
-          <p><span>Life can get complicated really quickly,</span> but it doesn't have to be! There are many ways to simplify your life, <a href="#">few of which we've explored in the past</a>. This week we're taking a bit of a approach though, in
-            how you can find simplicity in the life you already living.</p>
-          <a class="continue-reading" href="#">CONTINUE READING</a>
-        </div>
+        <img src="img/featured-content-img.jpg" alt="featured-img">
+        <h2>Finding simplicity in life</h2>
+        <p><strong>Life can get complicated really quickly,</strong> but it doesn't have to be! There are many ways to simplify your life, <a href="#">few of which we've explored in the past</a>. This week we're taking a bit of a approach though, in
+          how you can find simplicity in the life you already living.</p>
+        <a class="continue-reading" href="#">CONTINUE READING</a>
 
       </div>
 
-      <div class="general-content">
+      <div class="article-recent">
 
-        <img class="general-img" src="img/general-content-img-1.jpg" alt="Keep food simple">
-        <div class="general-text">
-          <h2>Keeping cooking simple</h2>
+        <img class="article-recent-img" src="img/general-content-img-1.jpg" alt="Keep food simple">
+        <div class="article-recent-content">
+          <h2 class="article-recent-title">Keeping cooking simple</h2>
           <p>Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One of the easiest ways to do that is to keep your cooking nice and simple.</p>
           <a class="continue-reading" href="#">CONTINUE READING</a>
         </div>
 
       </div>
 
-      <div class="general-content">
+      <div class="article-recent">
 
-        <img class="general-img" src="img/general-content-img-2.jpg" alt="Work and simplicity">
-        <div class="general-text">
-          <h2>Work and simplicity</h2>
+        <img class="article-recent-img" src="img/general-content-img-2.jpg" alt="Work and simplicity">
+        <div class="article-recent-content">
+          <h2 class="article-recent-title">Work and simplicity</h2>
           <p>Work is often a major source of stress. People get frustrated, it ruins their relationship with others and it leads to burnout. By keeping your work life as simple as possible, it will help balance everything out.</p>
           <a class="continue-reading" href="#">CONTINUE READING</a>
         </div>
 
       </div>
 
-      <div class="general-content">
+      <div class="article-recent">
 
-        <img class="general-img" src="img/general-content-img-3.jpg" alt="Work and simplicity">
-        <div class="general-text">
-          <h2>Simple decorations</h2>
+        <img class="article-recent-img" src="img/general-content-img-3.jpg" alt="Work and simplicity">
+        <div class="article-recent-content">
+          <h2 class="article-recent-title">Simple decorations</h2>
           <p>A home isn't a home until you've decorated a little. People either don't decorate, or they go overboard and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want it to and make things pop
             like never before.</p>
           <a class="continue-reading" href="#">CONTINUE READING</a>
@@ -91,64 +90,44 @@
 
       </div>
 
-    </div>
+    </main>
 
-    <div class="sidebar">
+    <aside class="sidebar">
 
-      <div class="sidebar-bg">
-
-        <div class="sidebar-box">
-
-          <div class="sidebar-content">
-            <h3>ABOUT ME</h3>
-            <img class="sidebar-img" src="img/about-me-img.jpg" alt="">
-            <p class="sidebar-text">I find life better, and I'm happier, when things are nice and simple.</p>
-          </div>
-
-        </div>
-
+      <div class="sidebar-widget">
+        <a href="about-me.html"><h3>ABOUT ME</h3></a>
+        <img class="sidebar-img" src="img/about-me-img.jpg" alt="">
+        <p class="sidebar-text">I find life better, and I'm happier, when things are nice and simple.</p>
       </div>
 
-      <div class="sidebar-bg">
+      <div class="sidebar-widget">
+        <a href="recent-posts.html"><h3>RECENT POSTS</h3></a>
 
-        <div class="sidebar-box">
-
-          <div class="sidebar-content">
-
-            <h3>RECENT POSTS</h3>
-
-            <div class="recent-post">
-              <img class="recent-post-img" src="img/general-content-img-1.jpg" alt="">
-              <h4><a href="#">Keeping cooking simple</a></h4>
-            </div>
-
-            <div class="recent-post">
-              <img class="recent-post-img" src="img/general-content-img-2.jpg" alt="">
-              <h4><a href="#">Work and simplicity</a></h4>
-            </div>
-
-            <div class="recent-post-last">
-              <img class="recent-post-img" src="img/general-content-img-3.jpg" alt="">
-              <h4><a href="#">Simple decorations</a></h4>
-            </div>
-
-          </div>
-
+        <div class="recent-post">
+          <img class="recent-post-img" src="img/general-content-img-1.jpg" alt="">
+          <h2><a class="recent-post-title" href="#">Keeping cooking simple</a></h2>
         </div>
 
+        <div class="recent-post">
+          <img class="recent-post-img" src="img/general-content-img-2.jpg" alt="">
+          <h2><a class="recent-post-title" href="#">Work and simplicity</a></h2>
+        </div>
+
+        <div class="recent-post">
+          <img class="recent-post-img" src="img/general-content-img-3.jpg" alt="">
+          <h2><a class="recent-post-title" href="#">Simple decorations</a></h2>
+        </div>
       </div>
 
-    </div>
+    </aside>
 
-    </div>
-
-  </section>
+  </div>
 
   <footer>
 
     <div class="footer-content">
       <p class="footer-title">Living the Simple Life</p>
-      <p class="copyright">Copyright 2022</p>
+      <p class="footer-copyright">Copyright 2022</p>
     </div>
 
   </footer>
